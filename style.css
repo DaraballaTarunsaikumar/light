@@ -1,0 +1,27 @@
+.background
+{
+    background: black;
+    text-align: center;
+}
+.bulbimage
+{
+    width: 150px;
+    
+}
+.catimage
+{
+    width: 200px;
+}
+.switchboard
+{
+    width: 300px;
+    height: 100px;
+    background: lightblue;
+    margin-left: 470px;
+    margin-top: 50px;
+    padding-top: 20px;
+}
+button
+{
+    margin-left: 20px;
+}

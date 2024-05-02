@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="background">
+        <div>
+        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-on-img.png" alt="" class="bulbimage" id="bulbimage">
+        </div>
+        <div>
+        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/cat-img.png" alt="" class="catimage" id="catimage"> 
+        </div>
+        <div class="switchboard">
+            <h1 id="switchstatus">Switch On</h1>
+            <button id="switchon" onclick="switchon()">Switch on</button>
+            <button id="switchoff" onclick="switchoff()" >Switch off</button>
+
+            </div>
+        </div>
+
+    </div>
+    <script>
+        function switchoff()
+        {
+            document.getElementById("bulbimage").src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-off-img.png"
+            document.getElementById("catimage").src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/cat-eyes-img.png"
+            document.getElementById("switchstatus").textContent="Switch Off"
+            document.getElementById("switchoff").style.background="#cbd2d9"
+            document.getElementById("switchon").style.background="green"
+        }
+        function switchon()
+        {
+            document.getElementById("bulbimage").src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-on-img.png"
+            document.getElementById("catimage").src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/cat-img.png"
+            document.getElementById("switchstatus").textContent="Switch On"
+            document.getElementById("switchoff").style.background="red"
+            document.getElementById("switchon").style.background="#cbd2d9"
+        }
+    </script>
+</body>
+</html>
